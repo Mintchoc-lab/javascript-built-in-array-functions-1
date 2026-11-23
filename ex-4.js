@@ -7,10 +7,15 @@ const todos = [
 ];
 
 function getCompletedTodo(todos) {
+  let todoFilter = todos.filter((filter)=> filter.completed === true)
+  console.log(todoFilter);
+  return todoFilter
   // Start coding here
 }
 
 getCompletedTodo(todos);
+const result = getCompletedTodo(todos)
+console.log(result);
 
 /* 
 	Output:
